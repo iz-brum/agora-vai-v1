@@ -8,7 +8,7 @@ function clearLayers() {
 
 // Função para buscar o JSON e adicionar as estações no mapa
 function addStationsToMap() {
-    const stationsJsonUrl = 'https://agora-meze7113w-iz-brums-projects.vercel.app/api/stations';
+    const stationsJsonUrl = 'http://localhost:3000/api/stations';
 
     axios.get(stationsJsonUrl)
         .then(response => {
