@@ -3,8 +3,9 @@
     "version": "1.0.0",
     "description": "Projeto voltado para o monitoramento e análise de dados ambientais no estado de Mato Grosso, Brasil, utilizando mapas interativos para visualização de focos de incêndio e áreas desmatadas.",
     "scripts": {
-        "start": "node src/server.js",
-        "dev": "nodemon src/server.js"
+        "start": "node api/stations.js", 
+        "dev": "nodemon src/server.js",   
+        "build": "echo 'Static deployment; no build step required'"
     },
     "dependencies": {
         "axios": "^1.7.7",
