@@ -10,7 +10,7 @@ function clearLayers() {
 function addStationsToMap() {
     const stationsJsonUrl = window.location.hostname === 'localhost'
     ? 'http://localhost:3000/api/stations'  // URL local
-    : 'https://agora-vai-v1-ichux3ujl-iz-brums-projects.vercel.app/api/stations';  // URL de produção
+    : 'https://agora-vai-v1.vercel.app/api/stations';  // URL de produção
 
     axios.get(stationsJsonUrl)
         .then(response => {
